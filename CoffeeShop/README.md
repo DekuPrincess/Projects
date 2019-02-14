@@ -12,4 +12,4 @@ Before:
 
 After:
 
-![Screenshot](img/newCoffeeShop.png)
+![Screenshot](img/revisedCoffeeShop.png)
