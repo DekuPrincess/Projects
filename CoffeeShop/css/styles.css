@@ -1,0 +1,257 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/****** Main Section ******/
+.wrapper {
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
+}
+button { 
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+    
+}
+.btnOne {
+   margin-left: 10px;
+   margin-top: 3.5rem; 
+   padding: 10px 60px;
+   width: 100%;
+   border: 3px solid white;
+   color: white;
+}
+
+/****** Navigation ******/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 2rem;
+  margin: 3rem;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-color .4s ease-in-out;
+}
+nav a:hover {
+  border-bottom: 1px solid black;
+}
+/****** Section One ******/
+.sectionOne {
+  height: 100vh;
+  background-image: url("../img/beanbackground.jpg");
+  max-width: 100%;
+  color: white;
+  padding: 2rem;
+}
+.sectionOne a {
+  text-decoration: none;
+}
+.sectionOneSubSection {
+  padding: 2rem;
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+.sectionOneSubSection h1, h2, p {
+  margin: 10px;
+  }
+#sectionOneHeading {
+  font-family: Varela;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: .2rem;
+  font-size: 2.5rem;
+}
+#sectionOneSecondHeading {
+  font-style: italic;
+  font-size: 20px;
+  }
+/******Icon for section one******/
+.symbol {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  padding: 2%;
+  color: white;
+}
+/****** Section Two ******/
+.sectionTwo {
+  display: flex;
+  padding: 2rem;
+  height: 400px;
+  text-align: center;
+}
+.sectionTwo p {
+  align-self: center;
+}
+/****** Section Three ******/
+.sectionThree { 
+  display: flex;
+  flex-direction: column;
+}
+.subOne {
+  background-image: url("../img/pourcoffee.jpg");
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 20px;
+} 
+.subTwo{
+  background-image: url("../img/icedcoffee.jpg");
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.subThree{
+  background-image: url("../img/coffeebell.jpg");
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 20px;
+}
+/****** Section Four ******/
+.sectionFour {
+  display: flex;
+  padding: 2rem;
+  height: 400px;
+  text-align: center;
+}
+.sectionFour p {
+  align-self: center;
+}
+/* Footer */
+footer {
+  padding: 3rem;
+  text-align: center;
+  background-color: black;
+  background-image: url("../img/beanbackground.jpg");
+  background-size: cover;
+  font-family: Lato;
+}
+footer p {
+  color: white;
+}
+
+/****** Hover Effect ******/
+.grow {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.grow:hover, .grow:focus, .grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/****** Media Queries ******/
+@media(min-width: 1000px){
+/*Navigation */
+  nav {
+    padding: 0;
+  ;
+}
+  nav ul {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  }
+  nav a {
+  padding: 2rem;
+  }
+  #brand {
+ margin-right: 10px;
+ font-size: 25px;
+}
+/****** Section One ******/
+  .sectionOne {
+    display: flex;
+    align-items: center;
+  }
+  .sectionOneSubSection {
+    padding: 2rem;
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .sectionOneSubSection h1, h2, p {
+    margin: 10px;
+  }
+  #sectionOneHeading {
+    font-size: 3.5rem;
+  }
+  #sectionOneSecondHeading {
+    font-style: italic;
+  }
+  button {
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    border: 3px solid #fff;
+}
+ .btnOne {
+   margin-left: 10px;
+   margin-top: 20px;
+   padding: 10px 60px;
+   border: 3px solid white;
+   color: white;
+   width: 20%;
+ }
+/****** Section Three ******/
+  .sectionThree {
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  .subOne {
+  height: 300px;
+  width: 300px;
+  }
+  .subTwo {
+  height: 300px;
+  width: 300px;
+  }
+  .subThree {
+  height: 300px;
+  width: 300px;
+  }
+  .icon {
+    display: block;
+  }
+/******Icon for section one******/
+.symbol {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  }
+}
